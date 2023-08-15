@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <title> Sites I Want To Make </title>
+      <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    @font-face {
+        font-family: 'General Sans';
+        font-style: normal;
+        src: url('GeneralSans.woff2');
+         font-display: swap;
+         font-weight: 1 999;  
+      }
+
+      body{
+        font-family: General Sans, Helvetica, Iowan Old Style;
+        color: #efefef;
+        background: #3057E1;
+        line-height: 1.6em;
+        font-size: 20px;
+        font-weight: 450;
+        background-image: 
+/*        url("https://www.transparenttextures.com/patterns/black-paper.png");*/
+          url("https://www.transparenttextures.com/patterns/rice-paper-2.png");
+/*        url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");*/
+        background-color: #3057E1;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      main{
+        padding: 1rem 3rem;
+        letter-spacing: 0.5px;
+        background-size: 40px 40px;
+        background-image:
+          linear-gradient(to right, rgba(250, 250, 250, 0.4) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(250, 250, 250, 0.4) 1px, transparent 1px);
+        word-spacing: 1px;
+      }
+
+      footer{
+        padding: 1rem;
+        background: #fff;
+        color: #3057E1;
+        opacity: 1;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      a{
+        color: inherit;
+        text-decoration-style: dashed;
+        font-weight: 600;
+        text-underline-offset: 3px;
+      }
+
+      section{
+        margin: 0rem;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .horizontal-scroll{
+        width: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding: 0rem 0rem;
+      }
+
+      .site-demo{
+        height: 25rem;
+        width: 35rem;
+        display: inline-block;
+        margin-right: 1.25rem;
+        box-sizing: border-box;
+        vertical-align: top;
+/*        border-radius: 8px;*/
+        position: relative;
+      }
+
+      .site-demo span{
+        font-size: 0.85rem;
+        font-weight: 600;
+        line-height: 3rem;
+      }
+
+      img{
+        width: 100%;
+        height: 22rem;
+        border-radius: inherit; 
+        border: solid 0.5px #eee;
+        display: block;
+        margin-top: 0px;
+      }
+
+      .over{
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        transition: 0.5s ease top;
+        pointer-events: none;
+      }
+
+      .under:hover + img{
+        top: -23rem;
+      }
+
+      .site-description{
+        height: 22rem;
+        width: 35rem;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 21rem;
+        border-radius: 8px;
+        background: #fff;
+        color: #3057E1;
+        margin-right: 1.25rem;
+        padding: 0rem 3rem;
+        box-sizing: border-box;
+/*        border: solid 10px #3057E1;*/
+/*        box-shadow: 0px 0px 2px #eee;  */
+        /*background-image: 
+        url("https://www.transparenttextures.com/patterns/project-paper.png");*/
+
+      }
+
+      .site-description p{
+        vertical-align: middle;
+        line-height: normal;
+        display: inline-block;
+        width: 100%;
+        white-space: normal;
+        line-height: 1.5em;
+        font-size: 1.5rem;
+        font-weight: 300;
+        background: #fff;
+        color: #3057E1;
+        font-variant: small-caps;
+      }
+
+      .site-description:hover{
+      }
+
+      .double-column{
+        column-count: 2;
+        column-gap: 2rem;
+        height: fit-content;
+        margin: 2rem 0rem 7rem 0rem;
+        line-height: 1.6em;
+      }
+
+      .double-column p{
+        color: #3057E1;
+        background: #f5f5f5;
+        padding: 1rem 2rem;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 1.05rem 0rem;
+      }
+
+      ul{
+        color: #3057E1;
+        background: #f5f5f5;
+        padding: 1rem 2rem;
+        margin: 1.05rem 0rem;
+
+      }
+
+      .double-column a{
+        color: inherit;
+        text-decoration-style: dashed;
+        font-weight: 600;
+        text-underline-offset: 3px;
+      }
+
+      .double-column a:hover{
+        font-style: italic;
+      }
+
+      h1{
+        font-size: 10rem;
+        margin-bottom: 0.5em;
+        margin-top: 0.5rem;
+        line-height: 1.05em;
+        width: 100%;
+/*        text-shadow: 8px 3px 12px #888;*/
+        letter-spacing: -4px;
+        text-align: right;
+      }
+
+      h2{
+        margin: 0rem 0rem 2rem 0rem;
+        font-size: 3rem;
+        line-height: 1.2em;
+/*        background: #3057E1;*/
+        width: fit-content;
+      }
+
+      .horizontal-scroll a{
+        text-decoration: none;
+        background: #eee;
+        color: #3057E1;
+        padding: 0.3rem 0.5rem;
+      }
+
+      i{
+        font-weight: 800;
+        font-style: normal;
+        /*text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-style: wavy;*/
+      }
+
+      .blink {
+        animation: blinker 2s linear infinite;
+      }
+
+      @keyframes blinker {
+        50% {
+          opacity: 0.2;
+        }
+      }
+
+      @media screen and (max-width: 800px){
+
+        body{
+          font-size: 18px;
+        }
+        main{
+          padding: 1rem;
+        }
+
+        .double-column{
+          column-count: 1;
+        }
+
+        h1{
+          font-size: 5rem;
+        }
+
+        h2{
+          font-size: 2.2rem;
+          line-height: 1.3em;
+        }
+
+        .site-demo{
+          width: 25rem;
+          height: auto;
+        }
+
+        .site-description{
+          height: 16rem;
+          width: 25rem;
+          line-height: 16rem;
+        }
+
+        .site-description p{
+           font-size: 1.1rem;
+        }
+
+        img{
+          height: auto;
+        }
+
+      </style>
+    </head>
+
+  <body>
+
+    <main>
+      <h1>  The Sites I Want To Make</h1>
+
+      <section class=double-column>
+
+        <p> And you should <a href="https://webcraft.jooodaloop.com">hire me</a> to make them. </p> 
+
+        <p> I used to have an Are.na board with the same name as this site, that I could come back to whenever I felt like designing something new. <b>Because I like making websites, okay?</b></p>
+
+        <p> The list kept growing, and I also had rough sketches and Figma mocks that I wanted to add to it. It became something that deserved it's own site&#8212;so that I could show clients the kind of creations that are possible on the web. Possibilites beget possibilites, <b>all ideas are inspiration</b>, etc. etc. </p>
+
+        <p> My hope is that you find something here that you want, or something that <b>helps you express what you want.</b> </p>
+
+        <p> Because the most important thing about a personal site is it's ability to complement the owner, and their goals. And their dreams. And their limitations and desires. This is the one true goal of design, and especially when it's something as personal as <b>your website</b>.</p>
+
+        <p>If you have writing that <i> you're not sure how to present</i>, I help with that. A site should be built around it's owner's content, not the other way around. <br><br> If you have things you <i>don't know how to write about</i>, I will try to make you a site that accounts for that. The 1500-word blog post is only one of dozens of different formats that are possible on the web.</p>
+      </section>
+
+      <section>
+        <h2> The <span style="font-weight: 400">super-minimal</span> personal sites </h2>
+        <div class=horizontal-scroll>
+            <div class=site-demo>
+              <img src='media/just-essays.png'>
+              <span> <a target="_blank" href="media/just-essays.png">just-essays.png</a> </span>
+            </div>
+            <div class=site-description>
+              <p>a site that has one paragraph per page</p>
+            </div>
+          </div>
+      </section>
+
+      <section class=double-column>
+        <p> It's always fun to see the word "minimal" in a client's description of their desired aesthetic. </p>
+        <p> Making a really good site with as few elements as possible is equal parts <a href=""> unexpectedly difficult</a> and incredibly rewarding. When you get it right, things just fit together so well. <br><br> But picking the right building blocks requires time and thoughtfulness. Every element matters that much more now.</p> 
+
+        <p> Really good minimalism always includes at least a couple elements that are novel enough to delight visitors. If all you have is an unstyled bunch of text, you're doing something wrong. <a href="https://motherfuckingwebsite.com/">motherfuckingwebsite</a> should be read as strong opinion, not gospel. </p>
+
+        <p> A few rough heurestics I use for these kinds of sites:
+          <b>
+          <br>
+          <br>
+          • Layout follows content 
+          <br>
+          • Find the font first
+          <br> 
+          • The right theme color needs to be searched for
+          <br>
+          • Do at least one new thing
+        </b>
+        </p>
+
+      </section>
+
+      <section>
+        <h2> The g<span style="color: red">i</span>mm<span style="color: red">i</span>cks & sht<span style="color: red">i</span>cks</h2>
+        <div class=horizontal-scroll>
+            <div class=site-description>
+              <p>a site where you write each post by hand</p>
+            </div>
+            <div class=site-description>
+              <p>a website that looks like ship's log book</p>
+            </div>
+          </div>
+      </section>
+
+      <section class=double-column>
+
+      <p> One of the best sites I've ever designed was a complete gimmick, I stole the aesthetic from <a href="https://en.wikipedia.org/wiki/Whole_Earth_Catalog">Whole Earth Catalogue</a>. Because that happened to be an example of design that Shreeda really liked. It really is that simple sometimes.
+        <br><br> 
+      Except...it isn't. For gimmicks to work, you have to pull them off really well, respecting the constraints and affordances of the browser. </p>
+
+      <p> A particularly annoying design detail is the fact that you can't rely on fixed viewport sizes, and have to accept that your elements are going to move around more than you would like them to. You have to play translator, going from the fixed layouts that you're trying to emulate to the fluid medium of the screen.</p>
+
+      <p> But not all gimmicks are aesthetic ones. You can also play around with arbitrary constraints, and other weird rules. </p>
+
+      <p> This is more than just fun, it's often useful than you'd expect. You know what constraints breed. <br><br>Someone who has never written an essay in their lives could write a 500 word post, as long as the post was in the form of multiple tweets.<br><br> Someone who hasn't updated their site in years can finally allow themsleves to do so if you tell them their site now has a "screenshot dump" section. </p>
+
+      <p> You just need to find the gimmick that works for you, and commit to the bit. </p>
+
+      </section>
+
+      <section>
+        <h2> The 
+          <span class=blink>raw concepts</span>
+           and
+          <span style="background: -webkit-linear-gradient(#f00, #faa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">abstract ideas</span> 
+         </h2>
+        <div class=horizontal-scroll>
+            <div class=site-description>
+              <p><b>epistolatory</b> <br><br> a site that is a collection of letters.<p>
+            </div>
+            <div class=site-description>
+              <p>a single page that contains every single thing about your life on the internet </p>
+            </div>
+            <div class=site-description>
+              <p>a website that is a map</p>
+            </div>
+            <div class=site-description>
+              <p>a text-based rpg game</p>
+            </div>
+            <div class=site-description>
+              <p>a website made up solely of 500 word posts, their titles make up the home page</p>
+            </div>
+          </div>
+      </section>
+
+      <section class=double-column>
+
+      <p> I don't know what these will look like yet. I don't know who they would be for either. If it's for you, I'm going to need your help to figure out how to take them from vague idea to actual site. These all exist as the <b>bare minimum concept descriptions</b> of what could be.</p>
+
+      <p> Most of these ideas are abstract because bringing them to a screen will be a tougher challenge than usual. If it were easy, I would have actual mock-ups by now. I need to know what a dynamic map of a website/person look slike before I can begin fitting it to a browser window.</p>
+
+      <p> Nearly all of these will be ruined by the homogenizing effect that mobile screens have on all sites, but that's okay. We pay the price for convenience. Because around 60% of visitors will  see your site on a phone screen. </p>
+
+      <p> Oh also, if you have ideas that might make for a cool site, <a href="https://twitter.com/joodalooped">let me know</a> so I can steal them and add them here. </p>
+
+      </section>
+
+      <section>
+        <h2> Sites I admire </h2>
+
+        <div class=horizontal-scroll>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/ives-1.png'>
+              <img loading="lazy" class=over src='media/ives-2.png'>
+              <span> <a target="_blank" href="http://lucy-ives.com/">Lucy Ives</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/100r-2.png'>
+              <img loading="lazy" class=over src='media/100r-1.png'>
+              <span> <a target="_blank" href="https://100r.co/site/home.html">100 Rabbits</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/andy-2.png'>
+              <img loading="lazy" class=over src='media/andy-1.png'>
+              <span> <a target="_blank" href="https://andymatuschak.org">Andy Matuschak</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/eugene-2.png'>
+              <img loading="lazy" class=over src='media/eugene-1.png'>
+              <span> <a target="_blank" href="https://eugenekudashev.com/">Eugene Kudashev</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/lynn-2.png'>
+              <img loading="lazy" class=over src='media/lynn-1.png'>
+              <span> <a target="_blank" href="https://lynnandtonic.com/">Lynn Fisher</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/robin-2.png'>
+              <img loading="lazy" class=over src='media/robin-1.png'>
+              <span> <a target="_blank" href="https://robinrendle.com/">Robin Rendle</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/self-noise-2.png'>
+              <img loading="lazy" class=over src='media/self-noise-1.png'>
+              <span> <a target="_blank" href="http://self-noise.net/">self noise</a> </span>
+            </div>  
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/chase-2.png'>
+              <img loading="lazy" class=over src='media/chase-1.png'>
+              <span> <a target="_blank" href="https://chasem.co/">Chase McCoy</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/alexander-2.png'>
+              <img loading="lazy" class=over src='media/alexander-1.png'>
+              <span> <a target="_blank" href="https://alexanderobenauer.com/labnotes/035/">Alexander Obenauer</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/copeland-2.png'>
+              <img loading="lazy" class=over src='media/copeland-1.png'>
+              <span> <a target="_blank" href="https://gemmacope.land/">Gemma Copeland</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/anson-2.png'>
+              <img loading="lazy" class=over src='media/anson-1.png'>
+              <span> <a target="_blank" href="https://www.ansonyu.me/">Anson Yu</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" src='media/website-room.png'>
+              <span> <a target="_blank" href="https://a-website-is-a-room.net/">A Website is a Room</a> </span>
+            </div>
+        </div>
+      </section>
+      <br>
+      <section>
+        <div class=horizontal-scroll>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/chia-2.png'>
+              <img loading="lazy" class=over src='media/chia-1.png'>
+              <span> <a target="_blank" href="https://chia.design/">Chia Amisola</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/colly-2.png'>
+              <img loading="lazy" class=over src='media/colly-1.png'>
+              <span> <a target="_blank" href="https://colly.com/">Simon Collison</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/chilla-2.png'>
+              <img loading="lazy" class=over src='media/chilla-1.png'>
+              <span> <a target="_blank" href=" https://nicochilla.com/">Nico Chilla</a> </span>
+            </div> 
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/toby-2.png'>
+              <img loading="lazy" class=over src='media/toby-1.png'>
+              <span> <a target="_blank" href="https://tobyshorin.com/">Toby Shorin</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/macwright-2.png'>
+              <img loading="lazy" class=over src='media/macwright-1.png'>
+              <span> <a target="_blank" href="https://macwright.com/projects/">Tom Macwright</a> </span>
+            </div>
+            
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/aaron-1.png'>
+              <img loading="lazy" class=over src='media/aaron-2.png'>
+              <span> <a target="_blank" href="https://aaronzlewis.com//">Aaron Z. Lewis</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/maya-2.jpeg'>
+              <img loading="lazy" class=over src='media/maya-1.png'>
+              <span> <a target="_blank" href="https://maya.land/">Maya</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/piper-1.png'>
+              <img loading="lazy" class=over src='media/piper-2.png'>
+              <span> <a target="_blank" href="https://piperhaywood.com/">Piper Haywood</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/molly-1.png'>
+              <img loading="lazy" class=over src='media/molly-2.png'>
+              <span> <a target="_blank" href="https://https://www.mollymielke.com/">Molly Mielke</a> </span>
+            </div>
+            <div class=site-demo>
+              <img loading="lazy" class=under src='media/violins-2.jpeg'>
+              <img loading="lazy" class=over src='media/violins-1.png'>
+              <span> <a target="_blank" href="https://violinsandviolinists.com/">Violins and Violinists</a> </span>
+            </div>  
+        </div>
+      </section>
+      <section class="double-column">
+        <p>All the really good sites come from people who have something to say. <br><br> You could make something that's just nice to look at, but that alone wouldn't invite me to poke around and explore. You need to have stuff on there that's worth reading/watching/clicking. <br><br> And there's <a href="">so much stuff</a> that you can have on there. </p>
+        <p> A website cannot flourish on colors and layout alone.</p>
+        <p> Another interesting thing about almost all the sites in the above showcase is that they're <i>not that complicated</i>. There's no fancy animations or gradients. Just good color choices and sublime typography.
+          <br><br> There's no hyper-specific filter or color scheme for images, and any media that is present is used very tastefully. The core of the web is text. </p>
+        <p> Finally, most of these have <b>been around for a long, long time</b>, especially if you're counting in internet time. I guess once you find the right site for you, all you have to do is build on top of it, and keep it online. 
+      </section>
+
+    </main>
+      
+    <footer>  © 2023 & beyond, <a href="https://joodaloop.com">Judah</a></footer>
+    </body></html>
