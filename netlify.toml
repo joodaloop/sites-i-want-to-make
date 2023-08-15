@@ -1,0 +1,18 @@
+baseURL = "/"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+      Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/media/*"
+    [headers.values]
+    Cache-Control = "public, immutable, max-age=31536000"
+
+[[headers]]
+  for = "/static/*"
+    [headers.values]
+    Cache-Control = "public, immutable, max-age=31536000"
+
+
