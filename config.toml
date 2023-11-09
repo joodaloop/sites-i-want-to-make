@@ -1,0 +1,22 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Hypertext as Literature"
+copyright = "© Copyright Judah, 2023 onwards"
+
+rssLimit = 20
+staticDir = "static"
+canonifyURLs = true
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  
+[author]
+	name = "Judah"
+	email = "judah@joodaloop.com"
+
+[params]
+  description = "The blogging hall of fame."
+
+[markup.goldmark.renderer]
+    unsafe = "true"
